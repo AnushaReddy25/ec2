@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
 resource "aws_security_group" "snp24082024" {
   name        = "security group using snp24082024"
   description = "security group using snp24082024"
-  vpc_id      = "vpc-072c4acd761c3b942"
+  vpc_id      = "vpc-046f6a9b4743f57f6"
 
   ingress {
     description      = "HTTPS"
