@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   ami           = "ami-0437df53acb2bbbfd"
-  instance_type = "t2.micro"
-  security_groups = [aws_security_group.anukeyyy275.name]
+  instance_type = "t3.micro"
+  security_groups = [aws_security_group.anukeyyy2751.name]
   key_name = aws_key_pair.key_pair.key_name
 
   tags = {
@@ -9,9 +9,9 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "anukeyyy275" {
-  name        = "security group using anukeyyy275"
-  description = "security group using anukeyyy275"
+resource "aws_security_group" "anukeyyy2751" {
+  name        = "security group using anukeyyy2751"
+  description = "security group using anukeyyy2751"
   vpc_id      = "vpc-046f6a9b4743f57f6"
 
   ingress {
@@ -46,6 +46,6 @@ resource "aws_security_group" "anukeyyy275" {
   }
 
   tags = {
-    Name = "anukeyyy275"
+    Name = "anukeyyy2751"
   }
 }
